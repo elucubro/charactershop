@@ -1,6 +1,8 @@
 <script lang=ts>
 	import { onMount } from "svelte";
     import BackgroundText from "$lib/BackgroundText.svelte";
+    import ProductContainer from "$lib/ProductContainer.svelte";
+	import CharacterContainer from "$lib/CharacterContainer.svelte";
 </script>
 
 
@@ -21,11 +23,17 @@
         <!-- begin right column content -->
         <div class="text-xl | h-full flex flex-col justify-start items-center |  border-primary border-b border-3  | bg-background ">
             <!-- top h1 with text-->
-            <h1 class="font-abhaya text-4xl">FEATURED PRODUCTS</h1>
+            <h1 class="text-3xl p-5 font-sans">featured products</h1>
+            <!-- product container -->
+            <ProductContainer/>
+            <div class="h-[calc(2.25rem+1.875rem)] p-5"></div>
         </div>
         <div class="text-xl | h-full flex flex-col justify-start items-center | border-primary border-t border-3 bg-background ">
             <!-- top h1 with text -->
-            <h1 class="font-abhaya text-4xl">FEATURED CHARACTERS</h1>
+            <h1 class="text-3xl p-5 font-sans">featured characters</h1>
+            <!-- character container -->
+            <CharacterContainer/>
+            <div class="h-[calc(2.25rem+1.875rem)] p-5"></div>
         </div>
     </div>
 </div>
